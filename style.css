@@ -1,0 +1,217 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+body{
+}
+.container{
+    padding-top: 30px;
+    
+}
+.container .CarTypes{
+    display:flex;
+    z-index:10
+}
+.CarTypes .Honda{
+    border : 1px solid  hsl(228, 29%, 33%);
+    border-radius: 10px
+}
+.Honda .Hondaphoto img {
+    width: 400px;
+    height: 250px;
+    padding: 10px;
+   
+}
+.Honda .Hondainfo {
+    display: flex;
+    padding-top:5px;
+    padding-bottom: 5px;
+    border: 1px solid turquoise;
+    border-radius: 5px
+}
+.Honda .Hondainfo p{
+    color: grey;
+}
+.Honda .Hondadetails{
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.Hondadetails .Hondadescription{
+    padding-right:60px;
+    color: hsl(228, 29%, 33%);
+}
+#Buy1{
+    height:25px;
+    border-radius:5px;
+    width:80px;
+    background-color: turquoise;
+    border-color:turquoise;
+}
+#Buy1:hover{
+    background-color: hsl(228, 29%, 33%);
+    cursor: pointer;
+    color: #ffff;
+}
+#Buy2{
+    height:25px;
+    border-radius:5px;
+    width:80px;
+    background-color: turquoise;
+    border-color:turquoise;
+}
+#Buy2:hover{
+    background-color: hsl(228, 29%, 33%);
+    cursor: pointer;
+    color: #ffff;
+}
+.CarTypes .Mazda{
+    border : 1px solid  hsl(228, 29%, 33%);
+    border-radius: 10px;
+}
+.Mazda .Mazdaphoto img {
+    width: 400px;
+    height: 250px;
+    padding: 10px;
+}
+.Mazda .Mazdainfo{
+    display: flex;
+    padding-top:5px;
+    padding-bottom: 5px;
+    border: 1px solid turquoise;
+    border-radius: 5px
+}
+.Mazda .Mazdainfo p{
+    color: grey;
+}
+.Mazda .Mazdadetails{
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.Mazdadetails .Mazdadescription{
+    color: hsl(228, 29%, 33%);
+}
+.container .payment{
+    background-color: hsl(228, 29%, 33%);;
+    width: 300px;
+    height:150px;
+    display:flex;
+    border-radius: 10px;
+    opacity:0;
+    z-index:9;
+    margin-top: 10px;
+}
+.wrapper .methodheading{
+    color: hsl(13, 100%, 96%);
+    padding-bottom: 20px
+}
+.wrapper .choices{
+    padding-bottom: 10px;
+}
+#Mpesa{
+    color :  hsl(13, 100%, 96%);
+}
+#Bank{
+    color :  hsl(13, 100%, 96%);
+}
+#confirm{
+    background-color: hsl(228, 29%, 33%) ;
+    width: 300px;
+    height:200px;
+    border-radius:10px;
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.confirm .heading{
+    display: flex;
+    padding-top:10px;
+    padding-bottom: 10px
+}
+#confirm .heading p{
+    color:  hsl(13, 100%, 96%);;
+    font-size: large;
+    font-weight: bold;
+}
+.confirm .paymentInfo{
+    display:flex;
+}
+.paymentInfo .nameAccounts p{
+    color : hsl(13, 100%, 96%);;
+    padding: 4px;
+}
+.paymentInfo .detailsAccounts p{
+    color : hsl(13, 100%, 96%);;
+    padding: 5px;
+}
+.confirm .ok{
+    padding-top: 10px
+}
+#Ok{
+    height:25px;
+    border-radius:5px;
+    width:250px;
+    color:turquoise ;
+    background-color:hsl(13, 100%, 96%) ;
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding-top:8px;
+    font-weight: bold
+    
+}
+#Ok:hover{
+    cursor:pointer;
+    background-color : turquoise;
+    color:  hsl(228, 29%, 33%) ;
+
+}
+#number{
+    border-radius:3px;
+}
+#error{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:420px){
+    .container .CarTypes{
+        display:flex;
+        flex-direction:column;
+        gap : 30px;
+    }
+    .Honda .Hondaphoto img {
+        width: 300px;
+        height: 150px;
+        padding: 10px;
+    }
+    .Hondadetails .Hondadescription{
+        padding-right:0px;
+    }
+    .Mazda .Mazdaphoto img {
+        width: 300px;
+        height: 150px;
+        padding: 10px;
+    }
+    
+
+
+}
